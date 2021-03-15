@@ -94,7 +94,7 @@ export default class Header extends Component {
                             <div class="collapse navbar-collapse" id="navbarResponsive">
                                 <ul class="navbar-nav text-uppercase ml-auto">
                                     <li class="nav-item text-primary"><Link to="/" class="nav-link js-scroll-trigger" href="#services">Home</Link></li>
-                                    <li class="nav-item text-primary"><Link to="/portfolio" class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</Link></li>
+                                    <li class="nav-item text-primary"><Link to="/portfolio" class="nav-link js-scroll-trigger" href="#portfolio">Project</Link></li>
                                     <li class="nav-item text-primary"><Link to="/about" class="nav-link js-scroll-trigger" href="#about">About</Link></li>
                                     <li class="nav-item text-primary"><Link to="/service" class="nav-link js-scroll-trigger" href="#team">Services</Link></li>
                                     <li class="nav-item text-primary"><Link to="/contact" class="nav-link js-scroll-trigger" href="#contact">Contact</Link></li>

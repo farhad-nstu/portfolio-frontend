@@ -8,62 +8,104 @@ export default class About extends Component {
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">About Me</h2>
                 </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2012</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2014</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
+                <div class="nk-block">
+          <div class="card card-bordered card-stretch">
+            <div class="card-inner-group">
+              <div class="card-inner p-0">
+                <div id="imageDiv" class="row pl-2 pt-2">
+                  <img width="150px" height="150px" class="px-3" src="{{ asset($about->image) }}" />
+                </div>
+                <div class="row pl-2 pt-2">                  
+                  <div class="col-md-12">
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Name</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <span></span>
+                      </div>   
+                    </div>    
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Email</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>dshkjh</p>
+                      </div>   
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Phone</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>98798778</p>
+                      </div>   
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Designation</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>ghjhgjhg</p>
+                      </div>   
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Short Description</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>jhhjhgh</p>
+                      </div>   
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Description</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>uytuytu</p>
+                      </div>   
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Current Focus</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>uyuyt</p>
+                      </div>   
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Professional Experience</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>ytiuyiuy</p>
+                      </div>   
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <label class="font-weight-bold">Course</label>
+                      </div>
+                      <div class="col-sm-8">
+                        <p>rtrry ytutu</p>
+                      </div>   
+                    </div>                    
+                    
+                  </div>
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
             </div>
         </section>
 
