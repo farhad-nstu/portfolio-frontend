@@ -10,6 +10,7 @@ import Register from '../components/Register';
 import Forgot from '../components/Forgot';
 import Reset from '../components/Reset';
 import axios from 'axios';
+import Skill from '../components/Skill';
 
 export default class Header extends Component {
     state = {
@@ -54,6 +55,7 @@ export default class Header extends Component {
                                     <li class="nav-item text-primary"><Link to="/" class="nav-link js-scroll-trigger" href="#services">Home</Link></li>
                                     <li class="nav-item text-primary"><Link to="/about" class="nav-link js-scroll-trigger" href="#about">About</Link></li>
                                     <li class="nav-item text-primary"><Link to="/service" class="nav-link js-scroll-trigger" href="#team">Services</Link></li>
+                                    <li class="nav-item text-primary"><Link to="/skill" class="nav-link js-scroll-trigger" href="#skills">Skills</Link></li>
                                     <li class="nav-item text-primary"><Link to="/contact" class="nav-link js-scroll-trigger" href="#contact">Contact</Link></li>
                                     <li class="nav-item text-primary"><Link to="/login" class="nav-link js-scroll-trigger" href="#login">Login</Link></li>
                                     <li class="nav-item text-primary"><Link to="/register" class="nav-link js-scroll-trigger" href="#register">Register</Link></li>
@@ -72,6 +74,7 @@ export default class Header extends Component {
                         <Route exact path="/about" component={About} />
                         <Route exact path="/contact" component={Contact} />
                         <Route exact path="/service" component={Service} />
+                        <Route exact path="/skill" component={Skill} />
                         <Route exact path="/login" component={() => <Login setUser={this.setUser} />} />
                         <Route exact path="/register" component={() => <Register setUser={this.setUser} />} />
                         <Route exact path="/forgot" component={Forgot} />
@@ -97,6 +100,7 @@ export default class Header extends Component {
                                     <li class="nav-item text-primary"><Link to="/portfolio" class="nav-link js-scroll-trigger" href="#portfolio">Project</Link></li>
                                     <li class="nav-item text-primary"><Link to="/about" class="nav-link js-scroll-trigger" href="#about">About</Link></li>
                                     <li class="nav-item text-primary"><Link to="/service" class="nav-link js-scroll-trigger" href="#team">Services</Link></li>
+                                    <li class="nav-item text-primary"><Link to="/skill" class="nav-link js-scroll-trigger" href="#skill">Skills</Link></li>
                                     <li class="nav-item text-primary"><Link to="/contact" class="nav-link js-scroll-trigger" href="#contact">Contact</Link></li>
                                     <li class="nav-item text-primary"><Link to="/" class="nav-link js-scroll-trigger" onClick={this.logout}>Logout</Link></li>                                 
                                 </ul>
@@ -115,6 +119,7 @@ export default class Header extends Component {
                         <Route exact path="/portfolio" component={() => <Portfolio user={this.state.user} />}
                         />
                         <Route exact path="/service" component={Service} />
+                        <Route exact path="/skill" component={Skill} />
                         <Route exact path="/login" component={Login} />
                         <Route exact path="/register" component={Register} />
                         <Route exact path="/forgot" component={Forgot} />
