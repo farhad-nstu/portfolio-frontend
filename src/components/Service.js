@@ -21,22 +21,6 @@ export default class Service extends Component {
 
   render() {
 
-    const services = this.state.services;
-    const allServices = services.map((service, index) => {
-      return(
-        <div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="my-3">{ service.title }</h4>
-            <p class="text-muted">{ service.pure_desc }</p>
-          </div>
-        </div>
-      )
-    })
-
     return (
       <div>      
         <section class="page-section" id="services">
@@ -46,7 +30,20 @@ export default class Service extends Component {
               <h3 class="section-subheading text-muted">This is what I serve. You can find your demand. We support various items.</h3>
             </div>
             <div class="row text-center">
-              { allServices }
+              {
+                this.state.services.map((service, index) => { 
+                  return (
+                    <div class="col-md-4">
+                      <span class="fa-stack fa-4x">
+                        <img class="mx-auto rounded-circle" width="150" height="130" src={"http://127.0.0.1:8000/" + service.image } alt="" />
+                      </span>
+                      <h4 class="my-3">{ service.title }</h4>
+                      <p class="text-muted">{ service.pure_desc }</p>
+                    </div>
+                  )
+                })
+              }
+
             </div>
           </div>
         </section>

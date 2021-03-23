@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Redirect, Link} from "react-router-dom";
 import axios from 'axios';
 import Service from './Service';
-import Portfolio from './Portfolio';
+import Project from './Project';
 
 export default class Home extends Component {
 
@@ -44,7 +44,7 @@ export default class Home extends Component {
         return (
           <div>
             <Service />
-            <Portfolio />
+            <Project />
 
         <section class="page-section bg-light" id="team">
             <div class="container">
